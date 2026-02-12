@@ -64,8 +64,12 @@ class PiezoHarvester:
         # 2. Adım: Güç Hesapla
         voltage, power = self.calculate_power(force)
         
-        # 3. Adım: İstatistikler
-        total_energy = np.trapz(power, time) # Joule (Integral)
+        # 3. Adım: İstatistikler (DÜZELTİLDİ: np.trapz -> np.trapezoid)
+        if hasattr(np, 'trapezoid'):
+             total_energy = np.trapezoid(power, time) # NumPy 2.0+ için
+        else:
+             total_energy = np.trapz(power, time)     # Eski NumPy sürümleri için yedek
+             
         avg_power = np.mean(power)
         peak_voltage = np.max(voltage)
         
@@ -98,8 +102,12 @@ class PiezoHarvester:
         ax2.grid(True, linestyle='--', alpha=0.7)
         ax2.legend()
         
+        # GRAFİĞİ KAYDETME SATIRI
+        plt.savefig("results_graph.png")
+        print("Grafik 'results_graph.png' olarak kaydedildi.")
+        
         plt.tight_layout()
-        plt.savefig("results_graph.png") # Grafiği dosya olarak kaydeder
+        plt.savefig("results_graph.png") 
 print("Grafik 'results_graph.png' olarak kaydedildi.")
         plt.show()
 
