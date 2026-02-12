@@ -14,3 +14,5 @@ Bu simülasyonu çalıştırmak için aşağıdaki kütüphanelere ihtiyaç vard
 
 ## Kullanım
 `simulation.py` (veya senin ana dosyanın adı neyse) dosyasını çalıştırarak sonuçları görebilirsiniz.
+
+
