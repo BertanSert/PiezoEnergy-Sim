@@ -99,6 +99,8 @@ class PiezoHarvester:
         ax2.legend()
         
         plt.tight_layout()
+        plt.savefig("results_graph.png") # Grafiği dosya olarak kaydeder
+print("Grafik 'results_graph.png' olarak kaydedildi.")
         plt.show()
 
 if __name__ == "__main__":
