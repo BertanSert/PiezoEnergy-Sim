@@ -13,6 +13,6 @@ Bu simülasyonu çalıştırmak için aşağıdaki kütüphanelere ihtiyaç vard
 * matplotlib
 
 ## Kullanım
-`simulation.py` (veya senin ana dosyanın adı neyse) dosyasını çalıştırarak sonuçları görebilirsiniz.
+`simulation.py`dosyasını çalıştırarak sonuçları görebilirsiniz.
 
 
