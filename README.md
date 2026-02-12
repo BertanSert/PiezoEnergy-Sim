@@ -16,3 +16,10 @@ Bu simülasyonu çalıştırmak için aşağıdaki kütüphanelere ihtiyaç vard
 `simulation.py`dosyasını çalıştırarak sonuçları görebilirsiniz.
 
 
+
+## Simülasyon Sonuçları
+Aşağıdaki grafik, simülasyonun ürettiği stokastik yaya kuvvetlerini ve elde edilen güç çıktısını gösterir:
+
+![Simülasyon Grafiği](results_graph.png)
+
+
