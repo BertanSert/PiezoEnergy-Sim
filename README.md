@@ -23,3 +23,16 @@ Aşağıdaki grafik, simülasyonun ürettiği stokastik yaya kuvvetlerini ve eld
 ![Simülasyon Grafiği](results_graph.png)
 
 
+## Mühendislik Teorisi (Engineering Background)
+
+Bu simülasyon, mekanik stresin elektrik yüküne dönüşümünü sağlayan **Doğrudan Piezoelektrik Etki** prensibine dayanır.
+
+Kullanılan basitleştirilmiş güç modeli:
+
+$$P(t) = \frac{V(t)^2}{R_{load}}$$
+
+Burada üretilen anlık voltaj $V(t)$, uygulanan dinamik kuvvet $F(t)$ ve piezoelektrik yük katsayısı $d_{33}$ ile ilişkilidir:
+
+$$V(t) = \frac{d_{33} \cdot F(t)}{C_{piezo}}$$
+
+*Modelde PZT-5H seramiği için tipik katsayılar kullanılmıştır.*
